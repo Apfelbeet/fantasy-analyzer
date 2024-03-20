@@ -1,4 +1,4 @@
-use std::fmt::{Display, Write};
+use std::fmt::Display;
 
 const DRIVERS: [&str; 20] = [
     "VER", "PER", "SAI", "LEC", "HAM", "RUS", "NOR", "PIA", "ALO", "STR", "OCO", "GAS", "RIC",
@@ -16,6 +16,29 @@ const CONSTRUCTORS: [&str; 10] = [
     "VCARB",
     "Williams",
 ];
+// const DRIVERS_MAP: HashMap<&str, usize> = HashMap::from_iter([("VER", 0), ("PER", 1), ("SAI", 2), ("LEC", 3), ("HAM", 4), ("RUS", 5), ("NOR", 6), ("PIA", 7), ("ALO", 8), ("STR", 9), ("OCO", 10), ("GAS", 11), ("RIC", 12)]);
+
+pub fn driver_from_name(driver: &str) -> usize {
+    DRIVERS
+        .iter()
+        .enumerate()
+        .find_map(|(index, &name)| if name == driver { Some(index) } else { None })
+        .expect("Invalid driver name")
+}
+
+pub fn constructor_from_name(constructor: &str) -> usize {
+    CONSTRUCTORS
+        .iter()
+        .enumerate()
+        .find_map(|(index, &name)| {
+            if name == constructor {
+                Some(index)
+            } else {
+                None
+            }
+        })
+        .expect("Invalid constructor name")
+}
 
 #[repr(transparent)]
 #[derive(Copy, Clone, Hash, Eq, PartialEq, PartialOrd, Ord)]
@@ -47,8 +70,18 @@ impl Team {
         Self(self.0 | (1 << driver))
     }
 
+    pub fn set_driver_name(self, driver: &str) -> Self {
+        let index = driver_from_name(driver);
+        self.set_driver(index)
+    }
+
     pub fn set_constructor(self, constructor: usize) -> Self {
         Self(self.0 | (1 << (constructor + 20)))
+    }
+
+    pub fn set_constructor_name(self, constructor: &str) -> Self {
+        let index = constructor_from_name(constructor);
+        self.set_constructor(index)
     }
 
     pub fn toggle_driver(self, driver: usize) -> Self {
@@ -81,6 +114,10 @@ impl Team {
             }
         }
         arr
+    }
+
+    pub fn bitmap(self) -> u32 {
+        self.0
     }
 }
 
@@ -142,5 +179,38 @@ impl Iterator for TeamEnumeration {
         team = team.set_constructor(self.ids[5]);
         team = team.set_constructor(self.ids[6]);
         Some(team)
+    }
+}
+
+#[derive(Clone)]
+pub struct ExtendedTeam {
+    pub team: Team,
+    pub chip: Option<Chip>,
+    pub drs_driver: usize,
+}
+
+#[derive(Eq, PartialEq, PartialOrd, Ord, Clone, Debug)]
+pub enum Chip {
+    Limitless,
+    Wildcard,
+    FinalFix(usize, usize),
+    AutoPilot,
+    NoNegative,
+    ExtraDRS(usize),
+}
+
+impl Chip {
+    pub fn from_input(value: &str) -> Option<Self> {
+        let vals = value.split_ascii_whitespace().collect::<Vec<_>>();
+        match vals[0] {
+            "Limitless" => Some(Self::Limitless),
+            "Wildcard" => Some(Self::Wildcard),
+            "AutoPilot" => Some(Self::AutoPilot),
+            "NoNegative" => Some(Self::NoNegative),
+            "ExtraDRS" => Some(Self::ExtraDRS(vals[1].parse().expect("Invalid argument for ExtraDR Chip"))),
+            "FinalFix" => Some(Self::FinalFix(driver_from_name(vals[1]), constructor_from_name(vals[2]))),
+            "None" => None,
+            _ => panic!("Invalid Chip: {value}"),
+        }
     }
 }

@@ -1,63 +1,49 @@
 use std::collections::{BTreeMap, BTreeSet};
 
+use league::League;
 use team::{Team, TeamEnumeration};
+use week::{cost_of_team, points_of_team};
 
-use crate::data::{constructor_costs, constructor_points, driver_costs, driver_points};
+use crate::{data::{constructor_costs, constructor_points, driver_costs, driver_points}, week::points_of_ext_team};
 
 mod data;
 mod team;
+mod league;
+mod week;
 
 fn main() {
-    let mut en = TeamEnumeration::new();
-    let driver_points = driver_points();
-    let driver_cost = driver_costs();
-    let constr_points = constructor_points();
-    let constr_cost = constructor_costs();
-    let mut map: BTreeSet<(isize, isize, Team)> = en
-        .filter(|&t| cost_of_team(t, &driver_cost, &constr_cost) <= 100.0)
-        .map(|t| {
-            (
-                points_of_team(t, &driver_points, &constr_points),
-                (cost_of_team(t, &driver_cost, &constr_cost) * 10.0) as isize,
-                t,
-            )
-        })
-        .collect();
-    for (points, _, team) in map {
-        println!(
-            "{} {} {}",
-            team,
-            points,
-            cost_of_team(team, &driver_cost, &constr_cost)
-        );
+    let points = data::points();
+    //let costs = data::costs();
+    let league = League::from_names(&["albon_ist_der_beste_angriff", "kai_gewinnteam"]);
+    for (i,week) in league.teams.iter().enumerate() {
+        println!("Week {i}");
+        for team in week {
+            println!("{}", points_of_ext_team(team, &points[i]));
+        }
     }
 }
 
-fn cost_of_team(team: Team, driver_cost: &[[f32; 20]], constr_cost: &[[f32; 10]]) -> f32 {
-    let mut cost = 0.0;
-    for driver in team.drivers() {
-        cost += driver_cost[0][driver];
-    }
-    for constr in team.constructors() {
-        cost += constr_cost[0][constr];
-    }
-    cost
-}
-
-fn points_of_team(
-    team: Team,
-    driver_points: &[[isize; 20]],
-    constr_points: &[[isize; 10]],
-) -> isize {
-    let mut points = 0;
-    let mut max = 0;
-    for driver in team.drivers() {
-        points += driver_points[0][driver];
-        max = std::cmp::max(max, driver_points[0][driver]);
-    }
-    points += max;
-    for constr in team.constructors() {
-        points += constr_points[0][constr];
-    }
-    points
-}
+// fn calculate_week(budget: f32, week: usize) {
+//     let driver_points = driver_points();
+//     let driver_cost = driver_costs();
+//     let constr_points = constructor_points();
+//     let constr_cost = constructor_costs();
+//     let mut map: BTreeSet<(isize, isize, Team)> = TeamEnumeration::new()
+//         .filter(|&t| cost_of_team(t, &driver_cost[week], &constr_cost[week]) <= budget)
+//         .map(|t| {
+//             (
+//                 points_of_team(t, &driver_points[week], &constr_points[week]),
+//                 (cost_of_team(t, &driver_cost[week], &constr_cost[week]) * 10.0) as isize,
+//                 t,
+//             )
+//         })
+//         .collect();
+//     for (points, _, team) in map {
+//         println!(
+//             "{} {} {}",
+//             team,
+//             points,
+//             cost_of_team(team, &driver_cost[week], &constr_cost[week])
+//         );
+//     }
+// }

@@ -1,4 +1,7 @@
-use crate::{team::{Chip, ExtendedTeam}, Team};
+use crate::{
+    team::{Chip, ExtendedTeam},
+    Team,
+};
 
 pub struct WeekCosts {
     pub drivers: [f32; 20],
@@ -10,6 +13,8 @@ pub struct WeekPoints {
     pub constrs: [isize; 10],
     pub drivers_qualifying: [isize; 20],
     pub constrs_qualifying: [isize; 10],
+    pub drivers_negative: [isize; 20],
+    pub constrs_negative: [isize; 10],
 }
 
 pub fn cost_of_team(team: Team, costs: &WeekCosts) -> f32 {
@@ -23,10 +28,7 @@ pub fn cost_of_team(team: Team, costs: &WeekCosts) -> f32 {
     cost
 }
 
-pub fn points_of_team(
-    team: Team,
-    week_points: &WeekPoints
-) -> isize {
+pub fn points_of_team(team: Team, week_points: &WeekPoints) -> isize {
     let mut points = 0;
     let mut max = 0;
     for driver in team.drivers() {
@@ -45,47 +47,46 @@ pub fn distance_of_teams(team1: Team, team2: Team) -> u32 {
 }
 
 pub fn distance_to_penalty(distance: u32) -> u32 {
-    std::cmp::max(distance - 2, 0) * 10 
+    std::cmp::max(distance - 2, 0) * 10
 }
 
-pub fn points_of_ext_team(team: &ExtendedTeam, week_points: &WeekPoints) -> isize {    
+pub fn points_of_ext_team(team: &ExtendedTeam, week_points: &WeekPoints) -> isize {
     let mut points = 0;
     let mut auto_pilot_max = 0;
     for driver in team.team.drivers() {
-        points += if team.chip == Some(Chip::NoNegative) {
-            std::cmp::max(week_points.drivers[driver], 0)
-        } else {
-            week_points.drivers[driver]
-        };
-        
+        points += week_points.drivers[driver];
+        if team.chip == Some(Chip::NoNegative) {
+            points += week_points.drivers_negative[driver];
+        }
         auto_pilot_max = std::cmp::max(auto_pilot_max, week_points.drivers[driver]);
     }
     for constructor in team.team.constructors() {
-        points += if team.chip == Some(Chip::NoNegative) {
-            std::cmp::max(week_points.constrs[constructor], 0)
-        } else {
-            week_points.constrs[constructor]
-        };
-        
+        points += week_points.constrs[constructor];
+        if team.chip == Some(Chip::NoNegative) {
+            points += week_points.constrs_negative[constructor];
+        }
     }
 
     if Some(Chip::AutoPilot) == team.chip {
         points += auto_pilot_max;
     } else {
-        points += if team.chip == Some(Chip::NoNegative) {
-            std::cmp::max(week_points.drivers[team.drs_driver], 0)
-        } else {
-            week_points.drivers[team.drs_driver]
-        };
+        points += week_points.drivers[team.drs_driver];
+        if team.chip == Some(Chip::NoNegative) {
+            points += week_points.drivers_negative[team.drs_driver];
+        }
     }
 
     if let Some(Chip::ExtraDRS(extra_drs_driver)) = team.chip {
-        points += 2*week_points.drivers[extra_drs_driver];
+        points += 2 * week_points.drivers[extra_drs_driver];
     }
 
     if let Some(Chip::FinalFix(quali_driver, race_driver)) = team.chip {
-        let factor_quali = if quali_driver == team.drs_driver {2} else {1};
-        let factor_race = if race_driver == team.drs_driver {2} else {1};
+        let factor_quali = if quali_driver == team.drs_driver {
+            2
+        } else {
+            1
+        };
+        let factor_race = if race_driver == team.drs_driver { 2 } else { 1 };
         points -= factor_quali * week_points.drivers[quali_driver];
         points += factor_quali * week_points.drivers_qualifying[quali_driver];
         points += factor_race * week_points.drivers[race_driver];
@@ -93,3 +94,4 @@ pub fn points_of_ext_team(team: &ExtendedTeam, week_points: &WeekPoints) -> isiz
     }
     points
 }
+

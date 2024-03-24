@@ -1,3 +1,4 @@
-Driver1,Driver2,Driver3,Driver4,Driver5,Constr1,Constr2,DRS,Chip
-VER,STR,LEC,HUL,SAR,Ferrari,VCARB,VER,NoNegative
-VER,STR,LEC,HUL,SAR,Mercedes,Williams,None
+Driver1,Driver2,Driver3,Driver4,Driver5,Constr1,Constr2,DRS,Chip,Transfers
+VER,STR,LEC,HUL,SAR,Ferrari,VCARB,VER,NoNegative,0
+VER,STR,LEC,HUL,SAR,Mercedes,Williams,VER,None,2
+VER,STR,LEC,HUL,BOT,Ferrari,VCARB,VER,None,3

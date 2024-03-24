@@ -1,3 +1,4 @@
-Driver1,Driver2,Driver3,Driver4,Driver5,Constr1,Constr2,DRS,Chip
-VER,BOT,RIC,TSU,SAI,Ferrari,VCARB,VER,None
-VER,ALO,RIC,TSU,BOT,Mercedes,VCARB,VER,None
+Driver1,Driver2,Driver3,Driver4,Driver5,Constr1,Constr2,DRS,Chip,Transfers
+VER,BOT,RIC,TSU,SAI,Ferrari,VCARB,VER,None,0
+VER,ALO,RIC,TSU,BOT,Mercedes,VCARB,VER,None,2
+VER,ALO,RIC,TSU,BOT,Mercedes,VCARB,VER,None,0

@@ -187,6 +187,7 @@ pub struct ExtendedTeam {
     pub team: Team,
     pub chip: Option<Chip>,
     pub drs_driver: usize,
+    pub transfers: usize,
 }
 
 #[derive(Eq, PartialEq, PartialOrd, Ord, Clone, Debug)]

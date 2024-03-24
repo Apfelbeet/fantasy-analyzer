@@ -42,12 +42,8 @@ pub fn points_of_team(team: Team, week_points: &WeekPoints) -> isize {
     points
 }
 
-pub fn distance_of_teams(team1: Team, team2: Team) -> u32 {
-    (team1.bitmap() & team2.bitmap()).count_ones()
-}
-
-pub fn distance_to_penalty(distance: u32) -> u32 {
-    std::cmp::max(distance - 2, 0) * 10
+pub fn distance_to_penalty(distance: usize) -> isize {
+    std::cmp::max(distance as isize - 2, 0) * 10
 }
 
 pub fn points_of_ext_team(team: &ExtendedTeam, week_points: &WeekPoints) -> isize {

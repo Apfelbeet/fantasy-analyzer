@@ -116,11 +116,13 @@ pub fn player_data(name: &str) -> Vec<ExtendedTeam> {
 
             let drs_driver = driver_from_name(&r[7]);
             let chip = Chip::from_input(&r[8]);
+            let transfers = r[9].parse().expect("Invalid amount of transfers");
 
             ExtendedTeam {
                 team,
                 drs_driver,
                 chip,
+                transfers,
             }
         })
         .collect()

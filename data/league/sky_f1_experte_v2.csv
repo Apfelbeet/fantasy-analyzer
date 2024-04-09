@@ -2,3 +2,4 @@ Driver1,Driver2,Driver3,Driver4,Driver5,Constr1,Constr2,DRS,Chip,Transfers
 PER,MAG,RIC,NOR,GAS,Ferrari,AstonMartin,NOR,None,0
 PER,LEC,MAG,ZHO,BOT,Ferrari,Mercedes,PER,None,5
 PER,LEC,MAG,TSU,BOT,Ferrari,Mercedes,LEC,None,1
+VER,LEC,SAR,TSU,BOT,Ferrari,AstonMartin,VER,AutoPilot,3

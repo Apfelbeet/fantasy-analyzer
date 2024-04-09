@@ -1,4 +1,4 @@
-use std::fmt::Display;
+use std::{fmt::Display, io::stdout};
 
 const DRIVERS: [&str; 20] = [
     "VER", "PER", "SAI", "LEC", "HAM", "RUS", "NOR", "PIA", "ALO", "STR", "OCO", "GAS", "RIC",
@@ -19,11 +19,12 @@ const CONSTRUCTORS: [&str; 10] = [
 // const DRIVERS_MAP: HashMap<&str, usize> = HashMap::from_iter([("VER", 0), ("PER", 1), ("SAI", 2), ("LEC", 3), ("HAM", 4), ("RUS", 5), ("NOR", 6), ("PIA", 7), ("ALO", 8), ("STR", 9), ("OCO", 10), ("GAS", 11), ("RIC", 12)]);
 
 pub fn driver_from_name(driver: &str) -> usize {
+    println!("{driver}");
     DRIVERS
         .iter()
         .enumerate()
         .find_map(|(index, &name)| if name == driver { Some(index) } else { None })
-        .expect("Invalid driver name")
+        .unwrap_or_else(|| panic!("Invalid driver name: {driver}"))
 }
 
 pub fn constructor_from_name(constructor: &str) -> usize {

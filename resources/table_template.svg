@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="913.61633"
+   height="607.20349"
+   viewBox="0 0 913.61633 607.20349"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   sodipodi:docname="table_template.svg"
+   inkscape:export-filename="../../../../home/matthias/dev/f1-fantasy-analyzer/template.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showguides="false"
+     inkscape:zoom="0.71145833"
+     inkscape:cx="647.96486"
+     inkscape:cy="405.50513"
+     inkscape:window-width="1920"
+     inkscape:window-height="1014"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g102">
+    <sodipodi:guide
+       position="283.10052,825.30186"
+       orientation="0,1920"
+       id="guide10"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="686.94411,597.38423"
+       orientation="1080,0"
+       id="guide11"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="310.50901,695.28722"
+       orientation="0,-1920"
+       id="guide12"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="72.724034,717.64415"
+       orientation="-1080,0"
+       id="guide13"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="484.19185,889.58602"
+       orientation="0,1920"
+       id="guide14"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="42.39773,681.58297"
+       orientation="1080,0"
+       id="guide15"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="285.20886,759.24037"
+       orientation="0,-1920"
+       id="guide16"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="907.58628,405.56469"
+       orientation="-1080,0"
+       id="guide17"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="201.1835,631.42475"
+       orientation="0,1920"
+       id="guide66"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="1919.1766,1080.4117"
+       orientation="1080,0"
+       id="guide67"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="372.35381,567.38092"
+       orientation="0,-1920"
+       id="guide68"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-0.82335377,0.41166902"
+       orientation="-1080,0"
+       id="guide69"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-0.82335377,1080.4117"
+       orientation="0,1920"
+       id="guide70"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="1919.1766,1080.4117"
+       orientation="1080,0"
+       id="guide71"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="182.9541,503.42777"
+       orientation="0,-1920"
+       id="guide72"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-0.82335377,0.41166902"
+       orientation="-1080,0"
+       id="guide73"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.82335377,-0.41166902)">
+    <rect
+       style="fill:#e2b7e2;fill-opacity:1;stroke:none;stroke-width:26.4163;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect1"
+       width="913.61633"
+       height="607.20349"
+       x="0.82335377"
+       y="0.41166902"
+       inkscape:label="background" />
+    <g
+       id="g109"
+       inkscape:label="colors">
+      <rect
+         style="fill:#772b5b;fill-opacity:1;stroke:none;stroke-width:0.848169;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         id="rect25"
+         width="23.914371"
+         height="23.914371"
+         x="890.76636"
+         y="0.47035432"
+         inkscape:label="color6" />
+      <rect
+         style="fill:#236061;fill-opacity:1;stroke:none;stroke-width:0.848169;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         id="rect24"
+         width="23.914371"
+         height="23.914371"
+         x="866.76636"
+         y="0.47035432"
+         inkscape:label="color5" />
+      <rect
+         style="fill:#484848;fill-opacity:0.478431;stroke:none;stroke-width:0.848169;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         id="rect21"
+         width="23.914371"
+         height="23.914371"
+         x="842.76636"
+         y="0.47035432"
+         inkscape:label="color4" />
+      <rect
+         style="fill:#474747;fill-opacity:1;stroke:none;stroke-width:0.848169;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         id="rect20"
+         width="23.914371"
+         height="23.914371"
+         x="818.76636"
+         y="0.47035432"
+         inkscape:label="color3" />
+      <rect
+         style="fill:#e2b7e2;fill-opacity:1;stroke:none;stroke-width:0.848169;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         id="rect19"
+         width="23.914371"
+         height="23.914371"
+         x="794.7663"
+         y="0.47035432"
+         inkscape:label="color2" />
+      <rect
+         style="fill:#d495d4;fill-opacity:1;stroke:none;stroke-width:0.848169;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         id="rect1-0"
+         width="23.914371"
+         height="23.914371"
+         x="770.7663"
+         y="0.47035432"
+         inkscape:label="color1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:26.6667px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:0.478417;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+       x="74.731689"
+       y="138.12843"
+       id="text8-6-9"
+       inkscape:label="header_team"><tspan
+         sodipodi:role="line"
+         id="tspan8-4-4"
+         x="74.731689"
+         y="138.12843"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;font-family:Rubik;-inkscape-font-specification:'Rubik Italic';fill:#484848;fill-opacity:0.478417;stroke:none;stroke-opacity:1">Team</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:26.6667px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:0.478417;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+       x="486.7735"
+       y="139.86797"
+       id="text8-6-9-9"
+       inkscape:label="header_points"><tspan
+         sodipodi:role="line"
+         id="tspan8-4-4-6"
+         x="486.7735"
+         y="139.86797"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;font-family:Rubik;-inkscape-font-specification:'Rubik Italic';fill:#484848;fill-opacity:0.478417;stroke:none;stroke-opacity:1">Points</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:26.6667px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:0.478417;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+       x="688.40955"
+       y="139.86797"
+       id="text17"
+       inkscape:label="header_budget"><tspan
+         sodipodi:role="line"
+         id="tspan17"
+         x="688.40955"
+         y="139.86797"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;font-family:Rubik;-inkscape-font-specification:'Rubik Italic';fill:#484848;fill-opacity:0.478417;stroke:none;stroke-opacity:1">Budget</tspan></text>
+    <g
+       id="g108"
+       inkscape:label="entry1">
+      <rect
+         style="font-variation-settings:normal;opacity:1;fill:#d495d4;fill-opacity:1;stroke:#383838;stroke-width:4.121;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         id="rect8"
+         width="882.69397"
+         height="56.222546"
+         x="16.284565"
+         y="148.40291"
+         inkscape:label="panel" />
+      <text
+         xml:space="preserve"
+         style="font-size:29.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="73.783752"
+         y="190.79256"
+         id="text8-6"
+         inkscape:label="team_name"><tspan
+           sodipodi:role="line"
+           id="tspan8-4"
+           x="73.783752"
+           y="190.79256"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">Team 1</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;letter-spacing:-4px;vector-effect:none;fill:#484848;fill-opacity:0.478431;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="36.372318"
+         y="191.0356"
+         id="text9"
+         inkscape:label="rank"><tspan
+           sodipodi:role="line"
+           id="tspan9"
+           x="36.372318"
+           y="191.0356"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;letter-spacing:-4px;fill:#484848;fill-opacity:0.478431;stroke:none;stroke-opacity:1">I</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="487.78375"
+         y="189.0356"
+         id="text18"
+         inkscape:label="points"><tspan
+           sodipodi:role="line"
+           id="tspan18"
+           x="487.78375"
+           y="189.0356"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">9999</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#236061;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="579.52496"
+         y="186.92725"
+         id="text19"
+         inkscape:label="points_rel"><tspan
+           sodipodi:role="line"
+           id="tspan19"
+           x="579.52496"
+           y="186.92725"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#236061;fill-opacity:1;stroke:none;stroke-opacity:1">(+999)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#236061;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="790.39166"
+         y="187.0356"
+         id="text21"
+         inkscape:label="budget_rel"><tspan
+           sodipodi:role="line"
+           id="tspan21"
+           x="790.39166"
+           y="187.0356"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#236061;fill-opacity:1;stroke:none;stroke-opacity:1">(-999)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="689.78375"
+         y="189.0356"
+         id="text22"
+         inkscape:label="budget"><tspan
+           sodipodi:role="line"
+           id="tspan22"
+           x="689.78375"
+           y="189.0356"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">999</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="749.78375"
+         y="189.0356"
+         id="text23"
+         inkscape:label="budget_dec"><tspan
+           sodipodi:role="line"
+           id="tspan23"
+           x="749.78375"
+           y="189.0356"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">.99</tspan></text>
+    </g>
+    <g
+       id="g107"
+       inkscape:label="entry2">
+      <rect
+         style="font-variation-settings:normal;opacity:1;fill:#e2b7e2;fill-opacity:1;stroke:#383838;stroke-width:4.121;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         id="rect7"
+         width="882.69397"
+         height="56.222546"
+         x="16.284565"
+         y="212.40291"
+         inkscape:label="panel" />
+      <text
+         xml:space="preserve"
+         style="font-size:29.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="73.783752"
+         y="254.61685"
+         id="text25"
+         inkscape:label="team_name"><tspan
+           sodipodi:role="line"
+           id="tspan25"
+           x="73.783752"
+           y="254.61685"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">Team 2</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;letter-spacing:-4px;vector-effect:none;fill:#484848;fill-opacity:0.478431;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="31.426491"
+         y="255.0356"
+         id="text26"
+         inkscape:label="rank"><tspan
+           sodipodi:role="line"
+           id="tspan26"
+           x="31.426491"
+           y="255.0356"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;letter-spacing:-4px;fill:#484848;fill-opacity:0.478431;stroke:none;stroke-opacity:1">II</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="487.78375"
+         y="253.69153"
+         id="text73"
+         inkscape:label="points"><tspan
+           sodipodi:role="line"
+           id="tspan73"
+           x="487.78375"
+           y="253.69153"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">9999</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#236061;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="579.52533"
+         y="251.58318"
+         id="text74"
+         inkscape:label="points_rel"><tspan
+           sodipodi:role="line"
+           id="tspan74"
+           x="579.52533"
+           y="251.58318"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#236061;fill-opacity:1;stroke:none;stroke-opacity:1">(+999)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#236061;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="790.39136"
+         y="251.69153"
+         id="text75"
+         inkscape:label="budget_rel"><tspan
+           sodipodi:role="line"
+           id="tspan75"
+           x="790.39136"
+           y="251.69153"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#236061;fill-opacity:1;stroke:none;stroke-opacity:1">(-999)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="689.78375"
+         y="253.69153"
+         id="text76"
+         inkscape:label="budget"><tspan
+           sodipodi:role="line"
+           id="tspan76"
+           x="689.78375"
+           y="253.69153"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">999</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="749.78375"
+         y="253.69153"
+         id="text77"
+         inkscape:label="budget_dec"><tspan
+           sodipodi:role="line"
+           id="tspan77"
+           x="749.78375"
+           y="253.69153"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">.99</tspan></text>
+    </g>
+    <g
+       id="g106"
+       inkscape:label="entry3">
+      <rect
+         style="font-variation-settings:normal;opacity:1;fill:#d495d4;fill-opacity:1;stroke:#383838;stroke-width:4.121;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         id="rect6"
+         width="882.69397"
+         height="56.222546"
+         x="16.284565"
+         y="276.40289"
+         inkscape:label="panel" />
+      <text
+         xml:space="preserve"
+         style="font-size:29.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="73.783752"
+         y="320.96823"
+         id="text32"
+         inkscape:label="team_name"><tspan
+           sodipodi:role="line"
+           id="tspan32"
+           x="73.783752"
+           y="320.96823"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">Team 3</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;letter-spacing:-4px;vector-effect:none;fill:#484848;fill-opacity:0.478431;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="26.372318"
+         y="321.03558"
+         id="text33"
+         inkscape:label="rank"><tspan
+           sodipodi:role="line"
+           id="tspan33"
+           x="26.372318"
+           y="321.03558"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;letter-spacing:-4px;fill:#484848;fill-opacity:0.478431;stroke:none;stroke-opacity:1">III</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="487.78375"
+         y="319.75302"
+         id="text78"
+         inkscape:label="points"><tspan
+           sodipodi:role="line"
+           id="tspan78"
+           x="487.78375"
+           y="319.75302"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">9999</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#236061;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="579.52533"
+         y="317.64468"
+         id="text79"
+         inkscape:label="points_rel"><tspan
+           sodipodi:role="line"
+           id="tspan79"
+           x="579.52533"
+           y="317.64468"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#236061;fill-opacity:1;stroke:none;stroke-opacity:1">(+999)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#236061;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="790.39136"
+         y="317.75302"
+         id="text80"
+         inkscape:label="budget_rel"><tspan
+           sodipodi:role="line"
+           id="tspan80"
+           x="790.39136"
+           y="317.75302"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#236061;fill-opacity:1;stroke:none;stroke-opacity:1">(-999)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="689.78375"
+         y="319.75302"
+         id="text81"
+         inkscape:label="budget"><tspan
+           sodipodi:role="line"
+           id="tspan81"
+           x="689.78375"
+           y="319.75302"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">999</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="749.78375"
+         y="319.75302"
+         id="text82"
+         inkscape:label="budget_dec"><tspan
+           sodipodi:role="line"
+           id="tspan82"
+           x="749.78375"
+           y="319.75302"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">.99</tspan></text>
+    </g>
+    <g
+       id="g105"
+       inkscape:label="entry4">
+      <rect
+         style="font-variation-settings:normal;opacity:1;fill:#e2b7e2;fill-opacity:1;stroke:#383838;stroke-width:4.121;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         id="rect5"
+         width="882.69397"
+         height="56.222546"
+         x="16.284565"
+         y="340.40289"
+         inkscape:label="panel" />
+      <text
+         xml:space="preserve"
+         style="font-size:29.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="73.783752"
+         y="384.33279"
+         id="text39"
+         inkscape:label="team_name"><tspan
+           sodipodi:role="line"
+           id="tspan39"
+           x="73.783752"
+           y="384.33279"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">Team 4</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;letter-spacing:-4px;vector-effect:none;fill:#484848;fill-opacity:0.478431;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="28.372318"
+         y="385.03558"
+         id="text40"
+         inkscape:label="rank"><tspan
+           sodipodi:role="line"
+           id="tspan40"
+           x="28.372318"
+           y="385.03558"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;letter-spacing:-4px;fill:#484848;fill-opacity:0.478431;stroke:none;stroke-opacity:1">IV</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="487.78375"
+         y="383.70618"
+         id="text83"
+         inkscape:label="points"><tspan
+           sodipodi:role="line"
+           id="tspan83"
+           x="487.78375"
+           y="383.70618"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">9999</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#236061;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="579.52533"
+         y="381.59784"
+         id="text84"
+         inkscape:label="points_rel"><tspan
+           sodipodi:role="line"
+           id="tspan84"
+           x="579.52533"
+           y="381.59784"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#236061;fill-opacity:1;stroke:none;stroke-opacity:1">(+999)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#236061;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="790.39136"
+         y="381.70618"
+         id="text85"
+         inkscape:label="budget_rel"><tspan
+           sodipodi:role="line"
+           id="tspan85"
+           x="790.39136"
+           y="381.70618"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#236061;fill-opacity:1;stroke:none;stroke-opacity:1">(-999)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="689.78375"
+         y="383.70618"
+         id="text86"
+         inkscape:label="budget"><tspan
+           sodipodi:role="line"
+           id="tspan86"
+           x="689.78375"
+           y="383.70618"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">999</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="749.78375"
+         y="383.70618"
+         id="text87"
+         inkscape:label="budget_dec"><tspan
+           sodipodi:role="line"
+           id="tspan87"
+           x="749.78375"
+           y="383.70618"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">.99</tspan></text>
+    </g>
+    <g
+       id="g104"
+       inkscape:label="entry5">
+      <rect
+         style="font-variation-settings:normal;opacity:1;fill:#d495d4;fill-opacity:1;stroke:#383838;stroke-width:4.121;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         id="rect4"
+         width="882.69397"
+         height="56.222546"
+         x="16.284565"
+         y="404.40289"
+         inkscape:label="panel" />
+      <text
+         xml:space="preserve"
+         style="font-size:29.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="73.783752"
+         y="448.5264"
+         id="text46"
+         inkscape:label="team_name"><tspan
+           sodipodi:role="line"
+           id="tspan46"
+           x="73.783752"
+           y="448.5264"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">Team 5</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;letter-spacing:-4px;vector-effect:none;fill:#484848;fill-opacity:0.478431;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="32.372318"
+         y="449.03558"
+         id="text47"
+         inkscape:label="rank"><tspan
+           sodipodi:role="line"
+           id="tspan47"
+           x="32.372318"
+           y="449.03558"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;letter-spacing:-4px;fill:#484848;fill-opacity:0.478431;stroke:none;stroke-opacity:1">V</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="487.78375"
+         y="448.36212"
+         id="text88"
+         inkscape:label="points"><tspan
+           sodipodi:role="line"
+           id="tspan88"
+           x="487.78375"
+           y="448.36212"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">9999</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#236061;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="579.52533"
+         y="446.25378"
+         id="text89"
+         inkscape:label="points_rel"><tspan
+           sodipodi:role="line"
+           id="tspan89"
+           x="579.52533"
+           y="446.25378"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#236061;fill-opacity:1;stroke:none;stroke-opacity:1">(+999)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#236061;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="790.39136"
+         y="446.36212"
+         id="text90"
+         inkscape:label="budget_rel"><tspan
+           sodipodi:role="line"
+           id="tspan90"
+           x="790.39136"
+           y="446.36212"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#236061;fill-opacity:1;stroke:none;stroke-opacity:1">(-999)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="689.78375"
+         y="448.36212"
+         id="text91"
+         inkscape:label="budget"><tspan
+           sodipodi:role="line"
+           id="tspan91"
+           x="689.78375"
+           y="448.36212"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">999</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="749.78375"
+         y="448.36212"
+         id="text92"
+         inkscape:label="budget_dec"><tspan
+           sodipodi:role="line"
+           id="tspan92"
+           x="749.78375"
+           y="448.36212"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">.99</tspan></text>
+    </g>
+    <g
+       id="g103"
+       inkscape:label="entry6">
+      <rect
+         style="font-variation-settings:normal;opacity:1;fill:#e2b7e2;fill-opacity:1;stroke:#383838;stroke-width:4.121;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         id="rect3"
+         width="882.69397"
+         height="56.222546"
+         x="16.284565"
+         y="468.46442"
+         inkscape:label="panel" />
+      <text
+         xml:space="preserve"
+         style="font-size:29.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="73.432358"
+         y="512.44116"
+         id="text53"
+         inkscape:label="team_name"><tspan
+           sodipodi:role="line"
+           id="tspan53"
+           x="73.432358"
+           y="512.44116"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">Team 6</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;letter-spacing:-4px;vector-effect:none;fill:#484848;fill-opacity:0.478431;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="28.372318"
+         y="513.03558"
+         id="text54"
+         inkscape:label="rank"><tspan
+           sodipodi:role="line"
+           id="tspan54"
+           x="28.372318"
+           y="513.03558"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;letter-spacing:-4px;fill:#484848;fill-opacity:0.478431;stroke:none;stroke-opacity:1">VI</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="487.78375"
+         y="512.31525"
+         id="text93"
+         inkscape:label="points"><tspan
+           sodipodi:role="line"
+           id="tspan93"
+           x="487.78375"
+           y="512.31525"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">9999</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#236061;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="579.52533"
+         y="510.20694"
+         id="text94"
+         inkscape:label="points_rel"><tspan
+           sodipodi:role="line"
+           id="tspan94"
+           x="579.52533"
+           y="510.20694"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#236061;fill-opacity:1;stroke:none;stroke-opacity:1">(+999)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#236061;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="790.39136"
+         y="510.31528"
+         id="text95"
+         inkscape:label="budget_rel"><tspan
+           sodipodi:role="line"
+           id="tspan95"
+           x="790.39136"
+           y="510.31528"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#236061;fill-opacity:1;stroke:none;stroke-opacity:1">(-999)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="689.78375"
+         y="512.31525"
+         id="text96"
+         inkscape:label="budget"><tspan
+           sodipodi:role="line"
+           id="tspan96"
+           x="689.78375"
+           y="512.31525"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">999</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="749.78375"
+         y="512.31525"
+         id="text97"
+         inkscape:label="budget_dec"><tspan
+           sodipodi:role="line"
+           id="tspan97"
+           x="749.78375"
+           y="512.31525"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">.99</tspan></text>
+    </g>
+    <g
+       id="g102"
+       inkscape:label="entry7">
+      <rect
+         style="font-variation-settings:normal;opacity:1;fill:#d495d4;fill-opacity:1;stroke:#383838;stroke-width:4.121;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         id="rect2"
+         width="882.69397"
+         height="56.222546"
+         x="16.284565"
+         y="533.12036"
+         inkscape:label="panel" />
+      <text
+         xml:space="preserve"
+         style="font-size:29.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="73.783752"
+         y="576.08978"
+         id="text60"
+         inkscape:label="team_name"><tspan
+           sodipodi:role="line"
+           id="tspan60"
+           x="73.783752"
+           y="576.08978"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">Team 7</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;letter-spacing:-4px;vector-effect:none;fill:#484848;fill-opacity:0.478431;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="24.372318"
+         y="577.03558"
+         id="text61"
+         inkscape:label="rank"><tspan
+           sodipodi:role="line"
+           id="tspan61"
+           x="24.372318"
+           y="577.03558"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;letter-spacing:-4px;fill:#484848;fill-opacity:0.478431;stroke:none;stroke-opacity:1">VII</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="487.78375"
+         y="575.56561"
+         id="text98"
+         inkscape:label="points"><tspan
+           sodipodi:role="line"
+           id="tspan98"
+           x="487.78375"
+           y="575.56561"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">9999</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#236061;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="579.52533"
+         y="573.45728"
+         id="text99"
+         inkscape:label="points_rel"><tspan
+           sodipodi:role="line"
+           id="tspan99"
+           x="579.52533"
+           y="573.45728"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#236061;fill-opacity:1;stroke:none;stroke-opacity:1">(+999)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#236061;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="790.39136"
+         y="573.56561"
+         id="text100"
+         inkscape:label="budget_rel"><tspan
+           sodipodi:role="line"
+           id="tspan100"
+           x="790.39136"
+           y="573.56561"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#236061;fill-opacity:1;stroke:none;stroke-opacity:1">(-999)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:37.3333px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="689.78375"
+         y="575.56561"
+         id="text101"
+         inkscape:label="budget"><tspan
+           sodipodi:role="line"
+           id="tspan101"
+           x="689.78375"
+           y="575.56561"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">999</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+         x="749.78375"
+         y="575.56561"
+         id="text102"
+         inkscape:label="budget_dec"><tspan
+           sodipodi:role="line"
+           id="tspan102"
+           x="749.78375"
+           y="575.56561"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#484848;fill-opacity:1;stroke:none;stroke-opacity:1">.99</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:74.6667px;font-variation-settings:normal;opacity:1;vector-effect:none;fill:#474747;fill-opacity:1;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+       x="16.284565"
+       y="76.312111"
+       id="text8"
+       inkscape:label="title"><tspan
+         sodipodi:role="line"
+         id="tspan8"
+         x="16.284565"
+         y="76.312111"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:74.6667px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';fill:#474747;fill-opacity:1;stroke:none;stroke-opacity:1">Team Overview</tspan></text>
+  </g>
+</svg>

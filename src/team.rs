@@ -1,4 +1,4 @@
-use std::{fmt::Display, io::stdout};
+use std::fmt::Display;
 
 const DRIVERS: [&str; 20] = [
     "VER", "PER", "SAI", "LEC", "HAM", "RUS", "NOR", "PIA", "ALO", "STR", "OCO", "GAS", "RIC",
@@ -19,7 +19,6 @@ const CONSTRUCTORS: [&str; 10] = [
 // const DRIVERS_MAP: HashMap<&str, usize> = HashMap::from_iter([("VER", 0), ("PER", 1), ("SAI", 2), ("LEC", 3), ("HAM", 4), ("RUS", 5), ("NOR", 6), ("PIA", 7), ("ALO", 8), ("STR", 9), ("OCO", 10), ("GAS", 11), ("RIC", 12)]);
 
 pub fn driver_from_name(driver: &str) -> usize {
-    println!("{driver}");
     DRIVERS
         .iter()
         .enumerate()
@@ -188,7 +187,7 @@ pub struct ExtendedTeam {
     pub team: Team,
     pub chip: Option<Chip>,
     pub drs_driver: usize,
-    pub transfers: usize,
+    pub negative: isize,
 }
 
 #[derive(Eq, PartialEq, PartialOrd, Ord, Clone, Debug)]
@@ -209,8 +208,13 @@ impl Chip {
             "Wildcard" => Some(Self::Wildcard),
             "AutoPilot" => Some(Self::AutoPilot),
             "NoNegative" => Some(Self::NoNegative),
-            "ExtraDRS" => Some(Self::ExtraDRS(vals[1].parse().expect("Invalid argument for ExtraDR Chip"))),
-            "FinalFix" => Some(Self::FinalFix(driver_from_name(vals[1]), constructor_from_name(vals[2]))),
+            "ExtraDRS" => Some(Self::ExtraDRS(
+                vals[1].parse().expect("Invalid argument for ExtraDR Chip"),
+            )),
+            "FinalFix" => Some(Self::FinalFix(
+                driver_from_name(vals[1]),
+                constructor_from_name(vals[2]),
+            )),
             "None" => None,
             _ => panic!("Invalid Chip: {value}"),
         }

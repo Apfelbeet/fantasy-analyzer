@@ -1,49 +1,91 @@
-use std::collections::{BTreeMap, BTreeSet};
-
+use data::{costs, points};
 use league::League;
-use team::{Team, TeamEnumeration};
-use week::{cost_of_team, points_of_team};
 
-use crate::{data::{constructor_costs, constructor_points, driver_costs, driver_points}, week::points_of_ext_team};
+pub mod data;
+pub mod league;
+pub mod render;
+pub mod team;
+pub mod week;
 
-mod data;
-mod team;
-mod league;
-mod week;
+const RACES: [&str; 24] = [
+    "Bahrain",
+    "Saudi Arabia",
+    "Australia",
+    "Japan",
+    "China",
+    "Miami",
+    "Imola",
+    "Monaco",
+    "Canada",
+    "Spain",
+    "Austria",
+    "Great Britan",
+    "Hungary",
+    "Belgium",
+    "Netherlands",
+    "Monza",
+    "Azerbaijan",
+    "Singapore",
+    "Texas",
+    "Mexico",
+    "Brazil",
+    "Las Vegas",
+    "Qatar",
+    "Abu Dhabi",
+];
 
 fn main() {
-    let points = data::points();
-    //let costs = data::costs();
-    let league = League::from_names(&["albon_ist_der_beste_angriff", "kai_gewinnteam"]);
-    for (i,week) in league.teams.iter().enumerate() {
-        println!("Week {i}");
-        for team in week {
-            println!("{}", points_of_ext_team(team, &points[i]));
-        }
+    print_league_points();
+    render_league_overview();
+}
+
+fn print_league_points() {
+    let p = points();
+    let names = [
+        "albon_ist_der_beste_angriff",
+        "kai_gewinnteam",
+        "max_tsunado",
+        "reiswaffel_racing",
+        "sky_f1_experte_v2",
+        "smoooothdrivers",
+        "verstappen_verdoppeln_lol",
+    ];
+    let league = League::from_names(&names);
+    let ps = league.points_for_all(&p);
+
+    println!(",{}", names.join(","));
+    for p in ps {
+        let max = p.y_axis.iter().max().unwrap();
+        println!("{},{}", RACES[p.x], p.y_axis.map(|x| (x - max).to_string()).join(","));
     }
 }
 
-// fn calculate_week(budget: f32, week: usize) {
-//     let driver_points = driver_points();
-//     let driver_cost = driver_costs();
-//     let constr_points = constructor_points();
-//     let constr_cost = constructor_costs();
-//     let mut map: BTreeSet<(isize, isize, Team)> = TeamEnumeration::new()
-//         .filter(|&t| cost_of_team(t, &driver_cost[week], &constr_cost[week]) <= budget)
-//         .map(|t| {
-//             (
-//                 points_of_team(t, &driver_points[week], &constr_points[week]),
-//                 (cost_of_team(t, &driver_cost[week], &constr_cost[week]) * 10.0) as isize,
-//                 t,
-//             )
-//         })
-//         .collect();
-//     for (points, _, team) in map {
-//         println!(
-//             "{} {} {}",
-//             team,
-//             points,
-//             cost_of_team(team, &driver_cost[week], &constr_cost[week])
-//         );
-//     }
-// }
+fn render_league_overview() {
+    let p = points();
+    let c = costs();
+    let names = [
+        "albon_ist_der_beste_angriff",
+        "kai_gewinnteam",
+        "max_tsunado",
+        "reiswaffel_racing",
+        "sky_f1_experte_v2",
+        "smoooothdrivers",
+        "verstappen_verdoppeln_lol",
+    ];
+    let league = League::from_names(&names);
+    let mut tree = render::table_template();
+    let ps = league.points_for_all(&p);
+    let mut team_points = Vec::from_iter(ps.last().unwrap().y_axis.iter().enumerate());
+    team_points.sort_by(|a, b| a.1.cmp(b.1).reverse());
+    for (index, (team, points)) in team_points.iter().enumerate() {
+        let week = ps.len() - 1;
+        let points_rel = league.calculate_points_week(week, *team, &p);
+        let budget = league.calculate_budget(week, *team, &c);
+        let budget_rel = budget - league.calculate_budget(week - 1, *team, &c);
+        let entry_name = format!("entry{}", index + 1);
+        let entry = render::find_label_recursive(&mut tree, &entry_name).unwrap();
+        render::set_data(entry, league.names[*team].clone(), **points, points_rel, budget, budget_rel);
+    }
+    let file = std::fs::File::create("overview.svg").unwrap();
+    tree.write(file).unwrap();
+}

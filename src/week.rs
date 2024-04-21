@@ -1,7 +1,4 @@
-use crate::{
-    team::{Chip, ExtendedTeam},
-    Team,
-};
+use crate::team::{Chip, ExtendedTeam, Team};
 
 pub struct WeekCosts {
     pub drivers: [f32; 20],
@@ -90,4 +87,3 @@ pub fn points_of_ext_team(team: &ExtendedTeam, week_points: &WeekPoints) -> isiz
     }
     points
 }
-

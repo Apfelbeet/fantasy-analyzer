@@ -1,5 +1,6 @@
 Driver1,Driver2,Driver3,Driver4,Driver5,Constr1,Constr2,DRS,Chip,Transfers
 RIC,BOT,VER,TSU,ALB,Ferrari,Mercedes,VER,None,0
-MAG,BOT,VER,TSU,ALB,RedBull,AstonMartin,VER,NoNegative,3
-MAG,BOT,PER,TSU,ALB,RedBull,Ferrari,PER,None,2
-MAG,GAS,PER,TSU,ALB,RedBull,Ferrari,PER,None,1
+MAG,BOT,VER,TSU,ALB,RedBull,AstonMartin,VER,NoNegative,10
+MAG,BOT,PER,TSU,ALB,RedBull,Ferrari,PER,None,0
+MAG,GAS,PER,TSU,ALB,RedBull,Ferrari,PER,None,0
+MAG,ZHO,PER,BOT,HUL,RedBull,Ferrari,PER,None,0

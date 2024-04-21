@@ -1,5 +1,6 @@
 Driver1,Driver2,Driver3,Driver4,Driver5,Constr1,Constr2,DRS,Chip,Transfers
 RUS,ALO,ALB,SAI,ZHO,AstonMartin,Ferrari,SAI,None,0
-VER,SAR,ALB,LEC,HUL,AstonMartin,Ferrari,VER,None,4
-VER,BOT,ALB,LEC,HUL,AstonMartin,Ferrari,VER,None,1
+VER,SAR,ALB,LEC,HUL,AstonMartin,Ferrari,VER,None,20
 VER,BOT,ALB,LEC,HUL,AstonMartin,Ferrari,VER,None,0
+VER,BOT,ALB,LEC,HUL,AstonMartin,Ferrari,VER,None,0
+VER,BOT,ALB,TSU,ZHO,RedBull,Ferrari,VER,None,0

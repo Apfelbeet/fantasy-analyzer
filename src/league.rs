@@ -67,23 +67,24 @@ impl<const Size: usize> League<Size> {
     pub fn points_for_all(
         &self,
         week_points: &[WeekPoints],
-    ) -> Vec<WeekResult<usize, isize, Size>> {
+    ) -> Vec<[isize; Size]> {
         let mut result = Vec::new();
         for (week_index, week_teams) in self.teams.iter().enumerate() {
-            let y_axis = std::array::from_fn(|i| {
+            let points = std::array::from_fn(|i| {
                 self.calculate_points_accumulated(week_index, i, week_points)
             });
-            result.push(WeekResult {
-                x: week_index,
-                y_axis,
-            })
+            result.push(points)
         }
         result
     }
-}
 
-
-pub struct WeekResult<S, T, const Size: usize> {
-    pub x: S,
-    pub y_axis: [T; Size]
+    pub fn distance_to_first(&self, week_points: &[WeekPoints]) -> Vec<[usize; Size]> {
+        let mut result = Vec::new();
+        let ps = self.points_for_all(week_points);
+        for points in ps.into_iter() {
+            let max = points.iter().max().unwrap();
+            result.push(points.map(|x| (max - x) as usize));
+        }
+        result
+    }
 }

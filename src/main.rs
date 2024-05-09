@@ -35,8 +35,8 @@ const RACES: [&str; 24] = [
 ];
 
 fn main() {
-    print_league_points();
     render_league_overview();
+    render_point_chart();
 }
 
 fn print_league_points() {
@@ -54,9 +54,9 @@ fn print_league_points() {
     let ps = league.points_for_all(&p);
 
     println!(",{}", names.join(","));
-    for p in ps {
-        let max = p.y_axis.iter().max().unwrap();
-        println!("{},{}", RACES[p.x], p.y_axis.map(|x| (x - max).to_string()).join(","));
+    for (week, points) in ps.into_iter().enumerate() {
+        let max = points.iter().max().unwrap();
+        println!("{},{}", RACES[week], points.map(|x| (x - max).to_string()).join(","));
     }
 }
 
@@ -75,7 +75,7 @@ fn render_league_overview() {
     let league = League::from_names(&names);
     let mut tree = render::table_template();
     let ps = league.points_for_all(&p);
-    let mut team_points = Vec::from_iter(ps.last().unwrap().y_axis.iter().enumerate());
+    let mut team_points = Vec::from_iter(ps.last().unwrap().iter().enumerate());
     team_points.sort_by(|a, b| a.1.cmp(b.1).reverse());
     for (index, (team, points)) in team_points.iter().enumerate() {
         let week = ps.len() - 1;
@@ -88,4 +88,19 @@ fn render_league_overview() {
     }
     let file = std::fs::File::create("overview.svg").unwrap();
     tree.write(file).unwrap();
+}
+
+fn render_point_chart() {
+    let p = points();
+    let names = [
+        "albon_ist_der_beste_angriff",
+        "kai_gewinnteam",
+        "max_tsunado",
+        "reiswaffel_racing",
+        "sky_f1_experte_v2",
+        "smoooothdrivers",
+        "verstappen_verdoppeln_lol",
+    ];
+    let league = League::from_names(&names);
+    render::render_chart(&league, &p);
 }

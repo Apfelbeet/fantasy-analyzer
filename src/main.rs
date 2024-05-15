@@ -37,10 +37,10 @@ const RACES: [&str; 24] = [
 ];
 
 fn main() {
-    //render_league_overview();
-    //render_point_chart();
-    const S: usize = LastWeek::SIZE;
-    query_best_teams(113.2, recency_weighted_eval::<S, LastWeek>);
+    render_league_overview();
+    render_point_chart();
+    //const S: usize = LastWeek::SIZE;
+    //query_best_teams(110.2, recency_weighted_eval::<S, LastWeek>);
 }
 
 fn print_league_points() {
@@ -77,21 +77,8 @@ fn render_league_overview() {
         "verstappen_verdoppeln_lol",
     ];
     let league = League::from_names(&names);
-    let mut tree = render::table_template();
-    let ps = league.points_for_all(&p);
-    let mut team_points = Vec::from_iter(ps.last().unwrap().iter().enumerate());
-    team_points.sort_by(|a, b| a.1.cmp(b.1).reverse());
-    for (index, (team, points)) in team_points.iter().enumerate() {
-        let week = ps.len() - 1;
-        let points_rel = league.calculate_points_week(week, *team, &p);
-        let budget = league.calculate_budget(week, *team, &c);
-        let budget_rel = budget - league.calculate_budget(week - 1, *team, &c);
-        let entry_name = format!("entry{}", index + 1);
-        let entry = render::find_label_recursive(&mut tree, &entry_name).unwrap();
-        render::set_data(entry, league.names[*team].clone(), **points, points_rel, budget, budget_rel);
-    }
     let file = std::fs::File::create("overview.svg").unwrap();
-    tree.write(file).unwrap();
+    render::render_league_overview(&league, &p, &c, file);
 }
 
 fn render_point_chart() {
@@ -106,7 +93,8 @@ fn render_point_chart() {
         "verstappen_verdoppeln_lol",
     ];
     let league = League::from_names(&names);
-    render::render_chart(&league, &p);
+    let file = std::fs::File::create("distance_to_first.svg").unwrap();
+    render::render_chart(&league, &p, file);
 }
 
 fn query_best_teams<F>(budget: f32, eval: F) 

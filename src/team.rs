@@ -1,10 +1,12 @@
-use std::fmt::Display;
+use std::{collections::HashMap, fmt::Display};
 
-const DRIVERS: [&str; 20] = [
+use crate::week::WeekPoints;
+
+pub const DRIVERS: [&str; 20] = [
     "VER", "PER", "SAI", "LEC", "HAM", "RUS", "NOR", "PIA", "ALO", "STR", "OCO", "GAS", "RIC",
     "TSU", "ALB", "SAR", "MAG", "HUL", "BOT", "ZHO",
 ];
-const CONSTRUCTORS: [&str; 10] = [
+pub const CONSTRUCTORS: [&str; 10] = [
     "RedBull",
     "Ferrari",
     "Mercedes",
@@ -17,6 +19,9 @@ const CONSTRUCTORS: [&str; 10] = [
     "Williams",
 ];
 // const DRIVERS_MAP: HashMap<&str, usize> = HashMap::from_iter([("VER", 0), ("PER", 1), ("SAI", 2), ("LEC", 3), ("HAM", 4), ("RUS", 5), ("NOR", 6), ("PIA", 7), ("ALO", 8), ("STR", 9), ("OCO", 10), ("GAS", 11), ("RIC", 12)]);
+pub const CONSTRUCTORS_SHORT: [&str; 10] = [
+    "RB", "FER", "MER", "MCL", "AST", "ALP", "KIK", "HAS", "VCA", "WIL",
+];
 
 pub fn driver_from_name(driver: &str) -> usize {
     DRIVERS
@@ -209,14 +214,26 @@ impl Chip {
             "AutoPilot" => Some(Self::AutoPilot),
             "NoNegative" => Some(Self::NoNegative),
             "ExtraDRS" => Some(Self::ExtraDRS(
-                vals[1].parse().expect("Invalid argument for ExtraDR Chip"),
+                driver_from_name(vals[1]),
             )),
             "FinalFix" => Some(Self::FinalFix(
                 driver_from_name(vals[1]),
-                constructor_from_name(vals[2]),
+                driver_from_name(vals[2]),
             )),
             "None" => None,
             _ => panic!("Invalid Chip: {value}"),
         }
+    }
+
+    pub fn short_name(&self) -> String {
+        match self {
+            Chip::Limitless => "UnLim",
+            Chip::Wildcard => "WCard",
+            Chip::FinalFix(_, _) => "FF",
+            Chip::AutoPilot => "Auto",
+            Chip::NoNegative => "NoNeg",
+            Chip::ExtraDRS(_) => "x3",
+        }
+        .to_string()
     }
 }

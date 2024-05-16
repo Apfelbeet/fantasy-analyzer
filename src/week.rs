@@ -41,6 +41,35 @@ pub fn points_of_team(team: Team, week_points: &WeekPoints) -> isize {
     points
 }
 
+pub fn points_of_team_chip(team: Team, week_points: &WeekPoints, chip: Option<&Chip>) -> isize {
+    let mut points = 0;
+    let mut max = 0;
+    for driver in team.drivers() {
+        if chip == Some(&Chip::NoNegative) {
+            points += week_points.drivers[driver] + week_points.drivers_negative[driver];
+            max = std::cmp::max(max, week_points.drivers[driver] + week_points.drivers_negative[driver]);
+        } else {
+            points += week_points.drivers[driver];
+            max = std::cmp::max(max, week_points.drivers[driver]);
+        }
+        
+        
+    }
+    points += max;
+    if matches!(chip, Some(Chip::ExtraDRS(_))) {
+        points += max;
+    }
+    for constr in team.constructors() {
+        if chip == Some(&Chip::NoNegative) {
+            points += week_points.constrs[constr] + week_points.constrs_negative[constr];
+        } else {
+            points += week_points.constrs[constr];
+        }
+        
+    }
+    points
+}
+
 pub fn distance_to_penalty(distance: usize) -> isize {
     std::cmp::max(distance as isize - 2, 0) * 10
 }

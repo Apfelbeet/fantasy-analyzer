@@ -122,6 +122,7 @@ pub fn render_league_overview<const SIZE: usize>(
         let budget_rel = budget - league.calculate_budget(week - 1, *team, &week_costs);
         let entry_name = format!("entry{}", index + 1);
         let optimal_points = league.optimal_result(*team, league.teams.len() - 1, week_points, week_costs);
+        let optimal_points_rel = points_rel + league.teams[week][*team].negative - optimal_points;
         let entry = find_label_recursive(&mut tree, &entry_name).unwrap();
         set_general_player_data(
             entry,
@@ -130,7 +131,8 @@ pub fn render_league_overview<const SIZE: usize>(
             points_rel,
             budget,
             budget_rel,
-            optimal_points
+            optimal_points,
+            optimal_points_rel
         );
         set_player_team(entry, &league.teams[week][*team], &week_points[week])
     }
@@ -145,6 +147,7 @@ fn set_general_player_data(
     budget: f32,
     budget_rel: f32,
     optimal_points: isize,
+    optimal_points_rel: isize,
 ) {
     let budget_left = budget.floor();
     let budget_right = (budget - budget_left) * 100.0;
@@ -168,7 +171,7 @@ fn set_general_player_data(
     let elm_opt_points = find_label_recursive(tree, "optimal_result").unwrap();
     set_text(elm_opt_points, optimal_points.to_string());
     let elm_opt_points_rel = find_label_recursive(tree, "optimal_result_rel").unwrap();
-    set_text(elm_opt_points_rel, format!("({})", points_rel - optimal_points));
+    set_text(elm_opt_points_rel, format!("({})", optimal_points_rel));
 }
 
 fn set_player_team(tree: &mut Element, team: &ExtendedTeam, week_points: &WeekPoints) {

@@ -64,10 +64,7 @@ impl<const Size: usize> League<Size> {
         budget
     }
 
-    pub fn points_for_all(
-        &self,
-        week_points: &[WeekPoints],
-    ) -> Vec<[isize; Size]> {
+    pub fn points_for_all(&self, week_points: &[WeekPoints]) -> Vec<[isize; Size]> {
         let mut result = Vec::new();
         for (week_index, week_teams) in self.teams.iter().enumerate() {
             let points = std::array::from_fn(|i| {
@@ -88,16 +85,26 @@ impl<const Size: usize> League<Size> {
         result
     }
 
-    pub fn optimal_result(&self, team: usize, week: usize, week_points: &[WeekPoints], week_costs: &[WeekCosts]) -> isize {
+    pub fn optimal_result(
+        &self,
+        team: usize,
+        week: usize,
+        week_points: &[WeekPoints],
+        week_costs: &[WeekCosts],
+    ) -> isize {
         let last_week_budget = if week == 0 {
             100.0
         } else {
             self.calculate_budget(week - 1, team, week_costs)
         };
+        let chip = self.teams[week][team].chip.as_ref();
         TeamEnumeration::new()
-            .filter(|&t| week::cost_of_team(t, &week_costs[week]) <= last_week_budget)
-            .map(|t| week::points_of_team(t, &week_points[week]))
-            .max().unwrap()
+            .filter(|&t| {
+                chip == Some(&Chip::Limitless)
+                    || week::cost_of_team(t, &week_costs[week]) <= last_week_budget
+            })
+            .map(|t| week::points_of_team_chip(t, &week_points[week], chip))
+            .max()
+            .unwrap()
     }
 }
-

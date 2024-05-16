@@ -27,9 +27,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      showguides="false"
-     inkscape:zoom="1.4229166"
-     inkscape:cx="669.04835"
-     inkscape:cy="318.0088"
+     inkscape:zoom="1.006154"
+     inkscape:cx="440.29046"
+     inkscape:cy="319.5336"
      inkscape:window-width="1920"
      inkscape:window-height="1014"
      inkscape:window-x="0"
@@ -231,7 +231,7 @@
          x="641.01007"
          y="140.84937"
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:Rubik;-inkscape-font-specification:'Rubik Italic';fill:#484848;fill-opacity:0.478417;stroke:none;stroke-opacity:1"
-         id="tspan70">Result</tspan></text>
+         id="tspan70">Result*</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:16px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:0.478417;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
@@ -5950,5 +5950,17 @@
         </g>
       </g>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-variation-settings:normal;vector-effect:none;fill:#484848;fill-opacity:0.478417;stroke:none;stroke-width:4.021;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill"
+       x="422.36792"
+       y="604.05609"
+       id="text1"
+       inkscape:label="header_opt"><tspan
+         sodipodi:role="line"
+         x="422.36792"
+         y="604.05609"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Rubik;-inkscape-font-specification:'Rubik Italic';fill:#484848;fill-opacity:0.478417;stroke:none;stroke-opacity:1"
+         id="tspan1">* does not consider &quot;Final Fix&quot; and penalities for too many changes.</tspan></text>
   </g>
 </svg>

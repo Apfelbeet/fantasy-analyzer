@@ -56,10 +56,15 @@ impl<const Size: usize> League<Size> {
     pub fn calculate_budget(&self, week: usize, team: usize, week_costs: &[WeekCosts]) -> f32 {
         let mut budget: f32 = 100.0;
         for i in 0..=week {
-            //if !matches!(self.teams[i][team].chip, Some(Chip::Limitless)) {
-            budget -= cost_of_team(self.teams[i][team].team, &week_costs[i]);
-            budget += cost_of_team(self.teams[i][team].team, &week_costs[i + 1]);
-            //}
+            if matches!(self.teams[i][team].chip, Some(Chip::Limitless)) {
+                if i > 0 {
+                    budget -= cost_of_team(self.teams[i - 1][team].team, &week_costs[i]);
+                    budget += cost_of_team(self.teams[i - 1][team].team, &week_costs[i + 1]);
+                }
+            } else {
+                budget -= cost_of_team(self.teams[i][team].team, &week_costs[i]);
+                budget += cost_of_team(self.teams[i][team].team, &week_costs[i + 1]);
+            }
         }
         budget
     }

@@ -12,18 +12,14 @@ pub fn points() -> Vec<WeekPoints> {
             constructor_points(),
             zip(
                 driver_qualifying_points(),
-                zip(
-                    constructor_qualifying_points(),
                     zip(driver_negative_points(), constructor_negative_points()),
-                ),
             ),
         ),
     )
-    .map(|(a, (b, (c, (d, (e, f)))))| WeekPoints {
+    .map(|(a, (b, (c, (e, f))))| WeekPoints {
         drivers: a,
         constrs: b,
         drivers_qualifying: c,
-        constrs_qualifying: d,
         drivers_negative: e,
         constrs_negative: f,
     })
@@ -39,36 +35,40 @@ pub fn costs() -> Vec<WeekCosts> {
         .collect()
 }
 
+pub const DRIVER_POINTS_FILE: &str = "data/drivers_points.csv";
+pub const CONSTRUCTOR_POINTS_FILE: &str = "data/constr_points.csv";
+pub const DRIVER_QUALI_FILE: &str = "data/drivers_qualifying.csv";
+pub const DRIVER_NEGATIVE_FILE: &str = "data/drivers_negative.csv";
+pub const CONSTRUCTOR_NEGATIVE_FILE: &str = "data/constr_negative.csv";
+pub const DRIVER_COST_FILE: &str = "data/drivers_cost.csv";
+pub const CONSTRUCTOR_COST_FILE: &str = "data/constr_cost.csv";
+
 pub fn driver_points() -> Vec<[isize; 20]> {
-    read_file("data/drivers_points.csv")
+    read_file(DRIVER_POINTS_FILE)
 }
 
 pub fn constructor_points() -> Vec<[isize; 10]> {
-    read_file("data/constr_points.csv")
+    read_file(CONSTRUCTOR_POINTS_FILE)
 }
 
 pub fn driver_qualifying_points() -> Vec<[isize; 20]> {
-    read_file("data/drivers_qualifying.csv")
-}
-
-pub fn constructor_qualifying_points() -> Vec<[isize; 10]> {
-    read_file("data/constr_qualifying.csv")
+    read_file(DRIVER_QUALI_FILE)
 }
 
 pub fn driver_negative_points() -> Vec<[isize; 20]> {
-    read_file("data/drivers_negative.csv")
+    read_file(DRIVER_NEGATIVE_FILE)
 }
 
 pub fn constructor_negative_points() -> Vec<[isize; 10]> {
-    read_file("data/constr_negative.csv")
+    read_file(CONSTRUCTOR_NEGATIVE_FILE)
 }
 
 pub fn driver_costs() -> Vec<[f32; 20]> {
-    read_file("data/drivers_cost.csv")
+    read_file(DRIVER_COST_FILE)
 }
 
 pub fn constructor_costs() -> Vec<[f32; 10]> {
-    read_file("data/constr_cost.csv")
+    read_file(CONSTRUCTOR_COST_FILE)
 }
 
 fn read_file<const N: usize, T, P>(file: P) -> Vec<[T; N]>

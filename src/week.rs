@@ -11,7 +11,6 @@ pub struct WeekPoints {
     pub drivers: [isize; 20],
     pub constrs: [isize; 10],
     pub drivers_qualifying: [isize; 20],
-    pub constrs_qualifying: [isize; 10],
     pub drivers_negative: [isize; 20],
     pub constrs_negative: [isize; 10],
 }

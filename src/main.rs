@@ -1,9 +1,13 @@
+use std::io::Write;
+use std::{fmt::Display, fs::OpenOptions};
+
 use data::{costs, points};
 use league::League;
 use team::{Team, TeamEnumeration};
 use week::{WeekCosts, WeekPoints};
 
 pub mod data;
+pub mod fetch_data;
 pub mod league;
 pub mod render;
 pub mod team;
@@ -37,30 +41,22 @@ const RACES: [&str; 24] = [
 ];
 
 fn main() {
-    render_league_overview();
-    render_point_chart();
-    //const S: usize = LastWeek::SIZE;
-    //query_best_teams(110.2, recency_weighted_eval::<S, LastWeek>);
-}
+    let overview = std::env::args().find(|a| a == "--overview" || a == "--graphics").is_some();
+    let chart = std::env::args().find(|a| a == "--chart" || a == "--graphics").is_some();
+    let fetch_week = std::env::args().enumerate().find(|(_, a)| a == "--data").map(|(i, _)| std::env::args().nth(i + 1).expect("missing week argument!"));
 
-fn print_league_points() {
-    let p = points();
-    let names = [
-        "albon_ist_der_beste_angriff",
-        "kai_gewinnteam",
-        "max_tsunado",
-        "reiswaffel_racing",
-        "sky_f1_experte_v2",
-        "smoooothdrivers",
-        "verstappen_verdoppeln_lol",
-    ];
-    let league = League::from_names(&names);
-    let ps = league.points_for_all(&p);
-
-    println!(",{}", names.join(","));
-    for (week, points) in ps.into_iter().enumerate() {
-        let max = points.iter().max().unwrap();
-        println!("{},{}", RACES[week], points.map(|x| (x - max).to_string()).join(","));
+    if let Some(week) = fetch_week {
+        let w = week.parse().expect("invalid week");
+        println!("Fetch data for {}", RACES[w]);
+        scrape_new_data(w);
+    }
+    if overview {
+        println!("Render overview");
+        render_league_overview();
+    }
+    if chart {
+        println!("Render chart");
+        render_point_chart();
     }
 }
 
@@ -97,8 +93,38 @@ fn render_point_chart() {
     render::render_chart(&league, &p, file);
 }
 
-fn query_best_teams<F>(budget: f32, eval: F) 
-    where F: Fn(Team, &[WeekPoints], &[WeekCosts]) -> f32{
+fn scrape_new_data(week: usize) {
+    let (p, c) = fetch_data::fetch_data(week).unwrap();
+
+    append(&to_csv_line(&c.drivers), data::DRIVER_COST_FILE);
+    append(&to_csv_line(&c.constrs), data::CONSTRUCTOR_COST_FILE);
+    append(&to_csv_line(&p.drivers), data::DRIVER_POINTS_FILE);
+    append(&to_csv_line(&p.drivers_negative), data::DRIVER_NEGATIVE_FILE);
+    append(&to_csv_line(&p.drivers_qualifying), data::DRIVER_QUALI_FILE);
+    append(&to_csv_line(&p.constrs), data::CONSTRUCTOR_POINTS_FILE);
+    append(&to_csv_line(&p.constrs_negative), data::CONSTRUCTOR_NEGATIVE_FILE);
+}
+
+fn append(row: &str, file: &str) {
+    let mut file = OpenOptions::new()
+        .write(true)
+        .append(true)
+        .open(file)
+        .unwrap();
+    writeln!(file, "{}", row).unwrap();
+}
+
+fn to_csv_line<D: Display>(row: &[D]) -> String {
+    row.iter()
+        .map(|v| v.to_string())
+        .collect::<Vec<_>>()
+        .join(",")
+}
+
+fn query_best_teams<F>(budget: f32, eval: F)
+where
+    F: Fn(Team, &[WeekPoints], &[WeekCosts]) -> f32,
+{
     let points = data::points();
     let costs = data::costs();
 
@@ -108,10 +134,16 @@ fn query_best_teams<F>(budget: f32, eval: F)
         .map(|team| {
             let p = eval(team, &points, &costs);
             (p, team)
-        }).collect::<Vec<_>>();
+        })
+        .collect::<Vec<_>>();
     pt.sort_by(|(p1, _), (p2, _)| p1.total_cmp(p2).reverse());
     for (p, t) in pt {
-        println!("{} {:.2} \t {:.2}", t, p, week::cost_of_team(t, &costs.last().unwrap()));
+        println!(
+            "{} {:.2} \t {:.2}",
+            t,
+            p,
+            week::cost_of_team(t, &costs.last().unwrap())
+        );
     }
 }
 
@@ -123,13 +155,17 @@ fn unweighted_eval(team: Team, points: &[WeekPoints], _costs: &[WeekCosts]) -> f
     akk_points as f32 / points.len() as f32
 }
 
-fn recency_weighted_eval<const S: usize, W: Weights<S>>(team: Team, points: &[WeekPoints], _costs: &[WeekCosts]) -> f32 {
+fn recency_weighted_eval<const S: usize, W: Weights<S>>(
+    team: Team,
+    points: &[WeekPoints],
+    _costs: &[WeekCosts],
+) -> f32 {
     let mut avg_points = 0.0;
     let weights = W::WEIGHTS;
     for (w, p) in points.iter().enumerate() {
-        let s = std::cmp::min(points.len() - w - 1, weights.len() - 1); 
+        let s = std::cmp::min(points.len() - w - 1, weights.len() - 1);
         avg_points += week::points_of_team(team, p) as f32 * weights[s];
-    } 
+    }
     avg_points
 }
 

@@ -1,7 +1,7 @@
 use crate::{
     data::player_data,
     team::{Chip, ExtendedTeam, TeamEnumeration},
-    week::{self, cost_of_team, distance_to_penalty, WeekCosts, WeekPoints},
+    week::{self, cost_of_team, WeekCosts, WeekPoints},
 };
 
 pub struct League<const Size: usize> {

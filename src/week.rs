@@ -115,15 +115,14 @@ pub fn point_maps(team: &ExtendedTeam, week_points: &WeekPoints) -> (HashMap<usi
     }
 
     if let Some(Chip::FinalFix(quali_driver, race_driver)) = team.chip {
-        let factor_quali = if quali_driver == team.drs_driver {
+        let factor = if quali_driver == team.drs_driver {
             2
         } else {
             1
         };
-        let factor_race = if race_driver == team.drs_driver { 2 } else { 1 };
-        *driver_map.get_mut(&quali_driver).unwrap() -= factor_quali * week_points.drivers[quali_driver];
-        *driver_map.get_mut(&quali_driver).unwrap() += factor_quali * week_points.drivers_qualifying[quali_driver];
-        driver_map.insert(race_driver, factor_race * week_points.drivers[race_driver] - factor_race * week_points.drivers_qualifying[race_driver]);
+        *driver_map.get_mut(&quali_driver).unwrap() -= factor * week_points.drivers[quali_driver];
+        *driver_map.get_mut(&quali_driver).unwrap() += factor * week_points.drivers_qualifying[quali_driver];
+        driver_map.insert(race_driver, factor * week_points.drivers[race_driver] - factor * week_points.drivers_qualifying[race_driver]);
     }
     (driver_map, constructor_map)
 }

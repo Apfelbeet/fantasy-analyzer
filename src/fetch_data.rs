@@ -78,7 +78,7 @@ pub fn extract_driver_data(input: &str, week: usize) -> Result<(isize, isize, is
         if value < 0 {
             negative -= value;
         }
-        if event == "Qualifying Position" || event.starts_with("QF not classified") {
+        if event == "Qualifying Position" || event.starts_with("QF not classified") || event.starts_with("DQ QF") {
             quali += value;
         }
     }

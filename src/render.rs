@@ -121,7 +121,8 @@ pub fn render_league_overview<const SIZE: usize>(
         let budget = league.calculate_budget(week, *team, &week_costs);
         let budget_rel = budget - league.calculate_budget(week - 1, *team, &week_costs);
         let entry_name = format!("entry{}", index + 1);
-        let optimal_points = league.optimal_result(*team, league.teams.len() - 1, week_points, week_costs);
+        let optimal_points =
+            league.optimal_result(*team, league.teams.len() - 1, week_points, week_costs);
         let optimal_points_rel = points_rel + league.teams[week][*team].negative - optimal_points;
         let entry = find_label_recursive(&mut tree, &entry_name).unwrap();
         set_general_player_data(
@@ -132,7 +133,7 @@ pub fn render_league_overview<const SIZE: usize>(
             budget,
             budget_rel,
             optimal_points,
-            optimal_points_rel
+            optimal_points_rel,
         );
         set_player_team(entry, &league.teams[week][*team], &week_points[week])
     }
@@ -149,8 +150,8 @@ fn set_general_player_data(
     optimal_points: isize,
     optimal_points_rel: isize,
 ) {
-    let budget_left = budget.floor();
-    let budget_right = (budget - budget_left) * 100.0;
+    let budget_left = (budget + 0.001).floor();
+    let budget_right = ((budget + 0.001) - budget_left) * 100.0;
 
     let elm_name = find_label_recursive(tree, "team_name").unwrap();
     elm_name.children[0] = XMLNode::Text(name);
@@ -196,7 +197,9 @@ fn set_player_team(tree: &mut Element, team: &ExtendedTeam, week_points: &WeekPo
         set_text(driver_name_field, team::DRIVERS[*driver].into());
         let driver_points_field = find_label_recursive(driver_panel, "points").unwrap();
         set_text(driver_points_field, p.to_string());
-        if (team.chip != Some(Chip::AutoPilot) && team.drs_driver != *driver) || (team.chip == Some(Chip::AutoPilot) && i != 0) {
+        if (team.chip != Some(Chip::AutoPilot) && team.drs_driver != *driver)
+            || (team.chip == Some(Chip::AutoPilot) && i != 0)
+        {
             let drs_badge = find_label_recursive(driver_panel, "badge_drs_driver").unwrap();
             disable(drs_badge);
         }
@@ -211,7 +214,7 @@ fn set_player_team(tree: &mut Element, team: &ExtendedTeam, week_points: &WeekPo
     }
 
     let ff_panel = find_label_recursive(tree, "driver6".into()).unwrap();
-    if let Some(Chip::FinalFix(_, ff_sub)) = team.chip{
+    if let Some(Chip::FinalFix(_, ff_sub)) = team.chip {
         let driver_name_field = find_label_recursive(ff_panel, "name").unwrap();
         set_text(driver_name_field, team::DRIVERS[ff_sub].into());
         let driver_points_field = find_label_recursive(ff_panel, "points").unwrap();
@@ -228,7 +231,7 @@ fn set_player_team(tree: &mut Element, team: &ExtendedTeam, week_points: &WeekPo
         set_text(constr_name_field, team::CONSTRUCTORS_SHORT[*constr].into());
         let constr_points_field = find_label_recursive(constr_panel, "points").unwrap();
         set_text(constr_points_field, p.to_string());
-    } 
+    }
     return;
 }
 
@@ -238,6 +241,6 @@ fn set_text(text_field: &mut Element, text: String) {
 
 fn disable(element: &mut Element) {
     element
-    .attributes
-    .insert("style".into(), "display:none".into());
+        .attributes
+        .insert("style".into(), "display:none".into());
 }
